@@ -1,0 +1,17 @@
+.main-wrp {
+    @media(min-width: 768px) {
+        display: flex;
+    }
+}
+main {
+    @media(min-width: 768px) {
+        flex: 1 0 auto;
+    }
+}
+
+aside {
+    @media(min-width: 768px) {
+        flex: 0 0 250px;
+        border-left: 1px solid #888;
+    }
+}
