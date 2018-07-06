@@ -148,22 +148,22 @@
 
 .social-icons {
     display: none;
+    li {
+        &+li {
+            margin-left: 20px;
+        }
+        a {
+            color: $main-text;
+            &:hover {
+                color: $blue-anchor;
+            }
+        }
+    }
+    i {
+        font-size: 2rem;
+    }
     @media(min-width: 768px) {
         display: flex;
-        li {
-            &+li {
-                margin-left: 20px;
-            }
-            a {
-                color: $main-text;
-                &:hover {
-                    color: $blue-anchor;
-                }
-            }
-        }
-        i {
-            font-size: 2rem;
-        }
     }
 }
 
